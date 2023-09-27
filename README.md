@@ -55,5 +55,6 @@ T(n)= $3T(n/3)+n^5+1$
 **QUESTION:**: In lab today, I asked the TA to help walk me through the process. In the end, he claimed that the answer  
 was $n^5$, which is what I got originally. However, when I asked you if $n^5$ was the answer on Tuesday, you claimed that it  
 actually wasn't the correct answer. If you could give any more help concerning the issue, I would be very appreciative, as I  
-am very confused as to how to go about solving this. Thank you.
+am very confused as to how to go about solving this. Additionally, I worked this problem out a different way and got an answer  
+of O(n). Is this closer to the true answer, or farther away?
 
