@@ -52,3 +52,8 @@ T(n)= $3T(n/3)+n^5+1$
 = $9T(n/9)+(n/3)^5+n^5+2$  
 = $9(3T(n/27)+(n/9)^5+1)+(n/3)^5+n^5+2$  
 
+**QUESTION:**: In lab today, I asked the TA to help walk me through the process. In the end, he claimed that the answer  
+was $n^5$, which is what I got originally. However, when I asked you if $n^5$ was the answer on Tuesday, you claimed that it  
+actually wasn't the correct answer. If you could give any more help concerning the issue, I would be very appreciative, as I  
+am very confused as to how to go about solving this. Thank you.
+
