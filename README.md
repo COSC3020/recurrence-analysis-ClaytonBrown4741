@@ -33,8 +33,8 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.  
 
 **ANSWER**  
-THIS IS NOT FINISHED! IF YOU NOTICE ANYTHING WRONG WITH MY REASONING THUS FAR, PLEASE  
-LET ME KNOW!  
+**PLEASE NOTE:** The summations are looking weird to me for some reason. I have checked, and the syntax is correct, but it is  
+still displaying weird for me. If this persists for you, and you can find out why, I would be very appreciate. Thank you  
 
 To begin, we start with defining the recurrence relation. In this case, it would  
 look as follows:  
@@ -51,10 +51,9 @@ T(n)= $3T(n/3)+n^5+1$
 = $3(3T(n/9)+(n/3)^5+1)+n^5+1$  
 = $9T(n/9)+(n/3)^5+n^5+2$  
 = $9(3T(n/27)+(n/9)^5+1)+(n/3)^5+n^5+2$  
-
-**QUESTION:**: In lab today, I asked the TA to help walk me through the process. In the end, he claimed that the answer  
-was $n^5$, which is what I got originally. However, when I asked you if $n^5$ was the answer on Tuesday, you claimed that it  
-actually wasn't the correct answer. If you could give any more help concerning the issue, I would be very appreciative, as I  
-am very confused as to how to go about solving this. Additionally, I worked this problem out a different way and got an answer  
-of O(n). Is this closer to the true answer, or farther away?
+= $3^iT(n/{3^i})+{\sum_{j=0}^{i-1}} {3^i}/{3^{5^{j}}}n^5$  
+i = $(\log_{3} n)$  
+= $3^{\log_{3} n}T(n/{3^{\log_{3} n}})+{\sum_{j=0}^{{\log_{3} n}-1}} {3^j}/{3^{5^{j}}}n^5$  
+= $n + n^5{\log_{3} n}$  
+= $n^5{\log_{3} n} \in O(n^5{\log{} n})$  
 
