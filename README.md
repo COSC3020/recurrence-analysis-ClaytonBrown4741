@@ -33,8 +33,8 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.  
 
 **ANSWER**  
-**PLEASE NOTE:** The summations are looking weird to me for some reason. I have checked, and the syntax is correct, but it is  
-still displaying weird for me. If this persists for you, and you can find out why, I would be very appreciate. Thank you  
+**PLEASE NOTE:** The summations are looking weird to me for some reason. However, it seems to work fine when viewed in Visual Studio.  
+I just wanted to give you a heads up.
 
 To begin, we start with defining the recurrence relation. In this case, it would  
 look as follows:  
