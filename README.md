@@ -30,4 +30,30 @@ function mystery(n) {
 
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
-might help with the notation for mathematical expressions.
+might help with the notation for mathematical expressions.  
+
+**ANSWER**  
+**PLEASE NOTE:** The summations are looking weird to me for some reason. However, it seems to work fine when viewed in Visual Studio.  
+I just wanted to give you a heads up.
+
+To begin, we start with defining the recurrence relation. In this case, it would  
+look as follows:  
+T(n) = 1 if n <= 1. Otherwise, T(n)= $3T(n/3)+n^5+1$  
+
+In this case, the base case is 1, because when n is less than or equal to 0, it simply returns which is  
+one action. In the other case, the 3T stands for the 3 recursive calls that have to be made. The n/3  
+is put in in order to account for the fact that the value of n is divided by 3 every time it is called  
+recursively. The $n^5$ represents the for loops in the center of the function. And finally, the +1 at the  
+end is put in in order to account for the initialization of the count variable. Using this information, the  
+proof can be shown as follows:  
+
+T(n)= $3T(n/3)+n^5+1$  
+= $3(3T(n/9)+(n/3)^5+1)+n^5+1$  
+= $9T(n/9)+(n/3)^5+n^5+2$  
+= $9(3T(n/27)+(n/9)^5+1)+(n/3)^5+n^5+2$  
+= $3^iT(n/{3^i})+{\sum_{j=0}^{i-1}} {3^j}/{3^{5^{j}}}n^5$  
+i = $(\log_{3} n)$  
+= $3^{\log_{3} n}T(n/{3^{\log_{3} n}})+{\sum_{j=0}^{{\log_{3} n}-1}} {3^j}/{3^{5^{j}}}n^5$  
+= $n + n^5$  
+= $n^5 \in O(n^5)$  
+
